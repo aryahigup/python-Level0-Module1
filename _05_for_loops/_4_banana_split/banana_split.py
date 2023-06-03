@@ -10,7 +10,6 @@
      separate lines.
 """
 
-from tkinter import *
 import tkinter as tk
 
 root = tk.Tk()
@@ -24,6 +23,11 @@ Text Rendering Example:
 canvas.create_text(100, 50, text="text goes here", font=("Arial", 16))
 '''
 # Put your code below
-
+for y in range(4):
+    if y == 3:
+        text = "banana"
+    else:
+        text = "ice cream"
+    canvas.create_text(100, y*23+54, text=text, font=("Arial", 16))
 
 root.mainloop()
